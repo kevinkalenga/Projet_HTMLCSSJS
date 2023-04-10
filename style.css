@@ -1,0 +1,132 @@
+/*******************Reset General******************/
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body,
+html {
+  width: 100%;
+  height: auto;
+  background: #000;
+  scroll-behavior: smooth;
+}
+p,
+span,
+a,
+ul,
+li,
+input,
+label {
+  font-family: "Roboto", "sans-serif";
+  font-weight: bold;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Secular One" "sans-serif";
+}
+a {
+  font-weight: 700;
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.2s ease-in-out;
+}
+a:hover {
+  color: #ffa600;
+}
+p {
+  font-size: calc(13px + 0.2vw);
+}
+/************************HEADER***********************/
+.header-home {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  padding-top: 80px;
+  background: no-repeat center / cover url(./src/fond.jpg);
+  padding-left: 1rem;
+  background-attachment: fixed;
+  -wmso-background-attachment: fixed;
+}
+.header-home h1 {
+  color: #fff;
+  font-size: calc(30px + 2.3vw);
+  margin-bottom: 1rem;
+}
+.header-home h1 span {
+  color: #ffa600;
+  font-size: calc(30px + 5.3vw);
+  font-family: "Dancing Script", cursive;
+}
+.header-home h2 {
+  color: #fff;
+  margin-bottom: 1rem;
+  font-size: calc(20px + 1.3vw);
+}
+.header-home hr {
+  border: none;
+  width: 250px;
+  height: 2px;
+  background: #ffa600;
+  margin-bottom: 1rem;
+}
+.header-home p {
+  margin-bottom: 1rem;
+  color: #fff;
+}
+.home-btns {
+  width: 100%;
+  height: auto;
+  margin: 2rem 0;
+}
+.home-btn {
+  border: 1px solid #ffa600;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  color: #fff;
+}
+.home-btn:hover {
+  color: #fff;
+}
+.home-btn2 {
+  background: #ffa600;
+  box-shadow: 0 0 0 0 rgba(173, 226, 226, 0.4);
+  transition: box-shadow 0.2s ease-in-out;
+}
+.home-btn2:hover {
+  box-shadow: 0 0 10px 7px rgba(173, 226, 226, 0.4);
+}
+.home-btn1 {
+  box-shadow: 0 0 0 0 rgba(173, 226, 226, 0.4);
+  transition: box-shadow 0.2s ease-in-out, background 0.2s ease-in-out;
+  margin: 1rem;
+}
+.home-btn1:hover {
+  background: #ffa600;
+  box-shadow: 0 0 10px 7px rgba(173, 226, 226, 0.4);
+}
+@media screen and (min-width: 780px) and (max-width: 1200px) {
+  .home-btn {
+    padding: 0.8rem 1rem;
+  }
+}
+@media screen and (max-width: 780px) {
+  .home-btn {
+    padding: 0.5rem 0.8rem;
+    font-size: 14px;
+  }
+  .header-home {
+    align-items: center;
+    padding-left: 0;
+    text-align: center;
+  }
+}
