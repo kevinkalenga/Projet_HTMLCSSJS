@@ -491,3 +491,60 @@ nav.fond-scroll {
   bottom: 0;
   opacity: 1;
 }
+/************************Contact***********************/
+#contact {
+  width: 100%;
+  background: #fff;
+}
+#contact h4 {
+  color: #ffa600;
+}
+.contact-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  padding-bottom: 3rem;
+  color: #333;
+}
+.contact-form label {
+  display: block;
+  width: 80%;
+  color: #ffa600;
+  margin: 1rem 0;
+}
+.contact-form input {
+  width: 80%;
+  background: none;
+  border: none;
+  outline: none;
+  height: 50px;
+  border-bottom: 1px solid #ffa600;
+}
+.contact-form textarea {
+  width: 80%;
+  background: none;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #ffa600;
+  height: 100px;
+}
+.contact-form button {
+  border: none;
+  background: #ffa600;
+  color: #fff;
+  font-weight: 700;
+  margin: 1rem 0;
+  cursor: pointer;
+  transition: color 0.2s ease-in-out, border 0.2s ease-in-out,
+    background 0.2s ease-in-out;
+}
+.contact-form button:hover {
+  border: 1px solid #ffa600;
+  background: transparent;
+  color: #ffa600;
+}
