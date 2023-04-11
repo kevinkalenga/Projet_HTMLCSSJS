@@ -378,3 +378,116 @@ nav.fond-scroll {
   color: #333;
   cursor: pointer;
 }
+/************************Newsletter***********************/
+.newsletter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 1rem;
+  background: #fff;
+}
+.newsletter-ligne {
+  width: 1px;
+  height: 300px;
+  background: #ffa600;
+  margin: 0 auto;
+}
+.newsletter h4 {
+  width: 100%;
+  /*color: #333;*/
+  height: 70px;
+  line-height: 70px;
+  text-align: center;
+  margin-top: 1rem;
+  color: #ffa600;
+}
+.newsletter form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 1rem 0;
+}
+.newsletter label {
+  display: block;
+  font-size: calc(20px + 1.5vw);
+  margin: 1rem 0;
+  text-align: center;
+}
+.newsletter input {
+  width: 100%;
+  max-width: 400px;
+  padding: 1rem;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #ffa600;
+  margin: 1rem 0;
+  text-align: center;
+  background: none;
+}
+.news-btn {
+  cursor: pointer;
+  font-weight: bold;
+  background: #ffa600;
+  box-shadow: 0 0 0 0 rgb(173, 226, 226, 0.4);
+  border: 1px solid rgba(255, 166, 0, 0);
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  color: #fff;
+  font-size: calc(13px + 0.2vw);
+  transition: box-shadow 0.2s ease-in-out, background 0.2s ease-in-out,
+    border 0.2s ease-in-out;
+}
+.news-btn:hover {
+  background: #ffa600;
+  border: 1px solid #ffa600;
+  box-shadow: 0 0 10px 7px rgba(8, 67, 73, 0.2);
+}
+/************************Portfolio***********************/
+.portfolio {
+  width: 100%;
+  max-width: 1200px;
+  margin: 3rem auto;
+  background: #000;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 1rem;
+  padding: 0 1rem;
+}
+.portfolio-card {
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 0 7px 4px rgba(8, 66, 73, 0.6);
+}
+.portfolio-card img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.2s ease-in, filter 0.2s ease-in;
+  filter: grayscale();
+}
+.portfolio-card img:hover {
+  transform: scale(1.2);
+  filter: none;
+}
+.portfolio-card-infos {
+  color: rgba(8, 67, 73, 0.7);
+  font-size: calc(18px + 0.2vw);
+  position: absolute;
+  width: 100%;
+  height: 105px;
+  line-height: 105px;
+  text-align: center;
+  opacity: 0.5;
+  background: rgba(255, 255, 255, 0.8);
+  bottom: -105px;
+  left: 0;
+  pointer-events: none;
+  cursor: default;
+  right: 0;
+  transition: bottom 0.2s ease-in-out, opacity 0.2s ease-in-out;
+}
+.portfolio-card:hover .portfolio-card-infos {
+  bottom: 0;
+  opacity: 1;
+}
